@@ -28,8 +28,7 @@ body
 .left-bottom a{
     color: aliceblue;
     display: flex;
-    height:110%;
-    width: 110%;
+    height:100%;
     margin-right:3%;
     text-align: center;
     align-items: center;
@@ -38,10 +37,11 @@ body
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .left-bottom a img{
+    position:static;
     margin-right: 5%;
     margin-left: 3%;
-    width: 9%;
-    height: 54%;
+    width: 10%;
+    height:55%;
     border-radius: 50%;
 }
 
