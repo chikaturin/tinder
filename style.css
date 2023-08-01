@@ -10,43 +10,30 @@ body
     height: 100%;
     width: 100%;
 }
-.menu
+.khung
 {
-    display: none;
-    height: 9%;
-    width: 98%;
-    padding-left: 2%;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    background:#121418;
+    display: flex;
 }
 .left
 {   
     font-size: 100%;
-    width: 20%;
+    width: 25%;
     height: 100vh;
     background: #121418;
-    border-right: 0.1rem solid #3C444F;   
+    border-right: 0.3rem solid #3C444F;   
     z-index: 2; 
 }
-#close
-{
-    display: block;
-}
-@media screen and (max-width:400px) {
-    #close
+@media screen and (max-width:1000px) {
+    .left
     {
         display: none;
-    }
-    .menu{
-        display:block;
     }
 }
 .left-above
 {
     display: flex;
     width: 100%;
+    height: 5vh;
     padding: 8% 0%;
     background:linear-gradient(50deg,#FD455A,#FF5A3E) ;  
     z-index: 3;  
@@ -54,7 +41,7 @@ body
 .left-above a{
     font-size: 100%;
     color: aliceblue;
-    display: flex;   
+    display: inline-flex;   
     margin-right:5%;
     text-align: center;
     align-items: center;
@@ -62,16 +49,29 @@ body
     font-weight: bold;    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+#left-belowc
+{
+    display: block;
+}
+#close{
+    display:none;
+}
+#close{
+    width: 100%;
+    height: 100%;
+}
 .name
 {
     font-size: 0.9rem;
 }
 .a1
 {
+    display: flex;
     padding: 2%;
     padding-left: 2%;
     margin-left:1%;
-    width: 65%;
+    align-items: center;
+    width: 50%; 
 }
 .a1:hover
 {
@@ -101,8 +101,9 @@ body
 }
 .a2 
 {
+    transition: all 0.5s ease;
     font-size: 100%;
-    margin-top: 45%;
+    margin-top: 50%;
     border-radius: 50%;
 }
 .a2:hover
@@ -111,5 +112,237 @@ body
 }
 .left-below
 {
-    top: 30%;
+    width: 100%;
+}
+.avt:hover
+{
+    width: 7rem;
+}
+.chat
+{
+    margin-top: 3%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-left: 5%;
+    color: white;
+    display: flex;
+    margin-right: 40%;
+    cursor: pointer;
+}
+.chat span
+{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10%;
+    display: flex;
+    font-size: 1rem;
+    cursor:pointer;
+}
+.avt
+{
+    position: relative;
+    border-radius: 3%;
+    margin-left: 2%;
+    width: 6.5rem;
+    height: 100%;
+    margin-top: 3%;
+    display:inline-block;
+    transition: all 0.5s ease;
+    cursor:pointer;
+}
+.avt::after
+{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    content:"";
+    bottom: 90%;
+    left: 90%;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid #000000;
+}
+.avt p{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-top: 90%;
+}
+.avt1
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/a4.jpg);
+}
+.avt2
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/huy.jpg);
+}
+.avt3
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/quynh.jpg);
+}
+.avt4
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/thanh.jpg);
+}
+.avt5
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/huy.jpg);
+}
+.menu-find::-webkit-scrollbar{
+    display: none;
+}
+.menufind
+{
+    display: none;
+    overflow: scroll;
+    height: 85vh;
+    border-radius: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+.menu-find
+{
+    border-radius: 3%;
+    margin-left: 2%;
+    width: 10rem;
+    height: 18rem;
+    margin-top: 3%;
+    display:inline-block;
+    transition: all 0.5s ease;
+    cursor:pointer;
+}
+.menu-find p
+{
+    margin-top: 100%;
+    margin-left: 1%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align:left;
+    text-align-last: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+}
+.menu1
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu1.jpg);
+}
+.menu2
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu2.jpg);
+}
+.menu3
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu3.jpg);
+}
+.menu4
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu4.jpg);
+}
+.menu5
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu5.jpeg);
+}
+.menu6
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu6.jpeg);
+}
+.menu7
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu7.jpeg);
+}
+.menu8
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu8.jpeg);
+}
+.menu9
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu9.jpeg);
+}
+.menu10
+{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.5)),url(./img/menu10.jpeg);
+}
+.congcu
+{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0,0,0,0.5);
+}
+.congcu1 
+{   
+    margin-top: 15%;
+    margin-left: 40%;
+    background:#121418;
+    width: 25rem;
+    height: 12.5rem;    
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.congcu1 p{ 
+    padding: 9px 0; 
+    margin-bottom: 10px;
+    color: white;
+}
+.shield p i
+{
+    margin-left: 3%;
+}
+.shield p
+{
+    cursor:pointer;
+    border: none;
+    color: white;   
+    border-bottom: 2px solid #3C444F;
+    
+}
+.t1
+{    
+    border-bottom: 2px solid #3C444F;
+    font-size: 200%;
+    text-align: center;
+}
+.t2{
+    cursor: pointer;
+    text-align: center;
+    font-size: 100%;
+    border-bottom: none;
+}
+.center-photo
+{
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 90%;
+}
+.center-photo img{
+    border-radius: 3%;
+    width: 25rem;
+    height: 40rem;
 }
