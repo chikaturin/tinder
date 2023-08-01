@@ -32,6 +32,9 @@ body
     {
         margin-left: 10%;
     }
+    .center{
+        display: block;
+    }  
 }
 .left-above
 {
@@ -338,20 +341,112 @@ body
     font-size: 100%;
     border-bottom: none;
 }
-.center-photo
-{
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+@media screen and (min-width:990px) {
+    .center-photo
+    {    
+        margin-top: 20%;
+        margin-left: 130%;
+    }
+    .center-menu
+    {
+        display: none;
+    }
 }
-.center-photo img{
-    border-radius: 3%;
-    width: 50vh;
+.center-menu
+{
+    padding-left: 5vh;
+    margin-left: 0;
+}
+.center-menu ul li a img{
+    margin-right: 20%;
+    display: inline-block;
+    width: 4vh;
+    height: 4vh;
+}
+.center-menu ul li 
+{   
+    margin-left: 10%;
+    justify-content: center;
+    display: inline-block;  
+    align-items: center;
+}
+.center-menu ul li i
+{
+    cursor:pointer;
+    font-size: 5vh;
+}
+.name-center
+{
+    font-size: 4vh;
+}
+.center-photo ul div li p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.center-photo ul div li
+{
+    margin-top: 3%;
+    display: inline-block;
+}
+.center-photo ul div li p i
+{
+    font-size: 2vh;
+}
+.backround-center
+{
+    width: 45vh;
     height: 85vh;
 }
-@media screen and (min-width:800px) {
-    .center-photo
-    {
-        margin-left: 70%;
-    }
+.center-photo-like 
+{
+    padding-top: 65vh;
+    padding-left: 10%;
+    width: 0vh;
+    height: 0vh;
+}
+.center-photo-like 
+{
+    width: 34vh;
+    height: 34vh;
+}
+.backround-center
+{
+    background-image: linear-gradient(transparent,rgba(0,0,0,0.9)),url(./img/linh\ 2.jpg); 
+    background-repeat: no-repeat;
+}
+.like1
+{
+    margin-left: 0vh;
+}
+.l2{
+    font-size: 2vh;
+    border-radius: 50%;
+    padding: 6px 6px 6px 6px;
+    border:2px solid #3D4551;
+}
+.l3{
+    font-size: 2.5vh;
+    font-weight:lighter;
+    border-radius: 50%;
+    padding: 9px 11px 9px 11px;
+    border:2px solid #EC719E;
+}
+.l4{
+    font-size: 2vh;
+    border-radius: 50%;
+    padding: 6px 6px 6px 6px;
+    border:2px solid #1761B8;
+}
+.l5{
+    font-size: 2.5vh;
+    border-radius: 50%;
+    padding: 9px 10px 9px 10px;
+    border:2px solid #199D67;
+}
+.l6{
+    font-size: 3vh;
+    padding: 6px 6px 6px 6px;
+    border-radius: 50%;
+    padding: 5px 5px 3px 7px;
+    border:2px solid #B752F2;
 }
