@@ -380,6 +380,20 @@ body
         margin-left: 25%;
     }
 }
+@media screen and (max-width:600px){
+    .center
+    {
+        margin-left: 2%;
+    }
+    .center-menu
+    {
+        margin-left: 5%;
+    }
+    .icon
+    {
+        margin-left: 8%;
+    }
+}
 .center-menu
 {
     margin-right: 100%;
