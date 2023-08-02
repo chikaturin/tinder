@@ -40,7 +40,7 @@ rightbtn.addEventListener("click",function(){
     {
         index=0
     }
-    document.querySelector(".photoimg").style.right=index*60+"vh"
+    document.querySelector(".photoimg").style.right=index*50+"vh"
 })
 leftbtn.addEventListener("click", function(){
     index=index-1
@@ -48,7 +48,7 @@ leftbtn.addEventListener("click", function(){
     {
         index=imgnumber.length-1
     }
-    document.querySelector(".photoimg").style.right=index*60+"vh"
+    document.querySelector(".photoimg").style.right=index*50+"vh"
 })
 
 
