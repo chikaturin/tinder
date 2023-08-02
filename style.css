@@ -28,13 +28,20 @@ body
     {
         display: none;
     }
+    .like1
+    {
+        margin-left: 2vh;
+    }
     .center-photo
     {
-        margin-left: 10%;
+        margin-left: 5vh;
     }
     .center{
         display: block;
     }  
+    .left_right{
+        opacity: 1;
+    }
 }
 .left-above
 {
@@ -108,14 +115,15 @@ body
 }
 .a2 
 {
+    overflow:visible;
+    font-size: 20vh;
     transition: all 0.5s ease;
-    font-size: 100%;
     margin-top: 50%;
     border-radius: 50%;
 }
 .a2:hover
 {
-    font-size: 150%;
+    transform: scale(1.1);
 }
 .left-below
 {
@@ -123,7 +131,7 @@ body
 }
 .avt:hover
 {
-    width: 7rem;
+    transform: scale(1.1);
 }
 .chat
 {
@@ -148,6 +156,7 @@ body
 }
 .avt
 {
+    overflow: visible;
     position: relative;
     border-radius: 3%;
     margin-left: 2%;
@@ -345,15 +354,30 @@ body
     .center-photo
     {    
         margin-top: 20%;
-        margin-left: 130%;
+        margin-left: 140%;
     }
     .center-menu
     {
         display: none;
     }
+    .like1{
+        margin-left: 5vh;
+    }
+    .left_right:hover
+    {
+        opacity: 1;
+    }
+    .left_right
+    {
+        height: 80%;
+        opacity: 0;
+    }
 }
 .center-menu
 {
+    width: 200%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     padding-left: 5vh;
     margin-left: 0;
 }
@@ -371,7 +395,7 @@ body
     align-items: center;
 }
 .center-menu ul li i
-{
+{    
     cursor:pointer;
     font-size: 5vh;
 }
@@ -379,74 +403,129 @@ body
 {
     font-size: 4vh;
 }
-.center-photo ul div li p{
+.photoimg a{
+    position: absolute;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
-.center-photo ul div li
+.icon
 {
-    margin-top: 3%;
+    width: 30vh;
+}
+.like 
+{
     display: inline-block;
+    z-index: 100;
+    display: flex;
+}
+.like li
+{
+    list-style: none;
 }
 .center-photo ul div li p i
 {
     font-size: 2vh;
 }
-.backround-center
+.center-photo
 {
-    width: 45vh;
-    height: 85vh;
-}
-.center-photo-like 
-{
-    padding-top: 65vh;
-    padding-left: 10%;
-    width: 0vh;
-    height: 0vh;
-}
-.center-photo-like 
-{
-    width: 34vh;
-    height: 34vh;
-}
-.backround-center
-{
-    background-image: linear-gradient(transparent,rgba(0,0,0,0.9)),url(./img/linh\ 2.jpg); 
-    background-repeat: no-repeat;
+    position: relative;   
+    display: flex;
 }
 .like1
 {
-    margin-left: 0vh;
+    width: 100%;
+    z-index: 888;
+    transition: all 0,5s ease;
+    overflow: visible;
+    margin-top: 70vh;
+    padding-left: 1vh;
+}
+.like1:hover
+{
+    transform: scale(1.1);
 }
 .l2{
     font-size: 2vh;
     border-radius: 50%;
-    padding: 6px 6px 6px 6px;
+    padding: 13px 14px 0px 14px;
     border:2px solid #3D4551;
 }
 .l3{
-    font-size: 2.5vh;
+    font-size: 3vh;
     font-weight:lighter;
     border-radius: 50%;
-    padding: 9px 11px 9px 11px;
+    padding: 9px 14px 9px 14px;
     border:2px solid #EC719E;
 }
 .l4{
     font-size: 2vh;
     border-radius: 50%;
-    padding: 6px 6px 6px 6px;
+    padding: 12px 13px 6px 13px;
     border:2px solid #1761B8;
 }
 .l5{
     font-size: 2.5vh;
     border-radius: 50%;
-    padding: 9px 10px 9px 10px;
+    padding: 12px 12px 9px 12px;
     border:2px solid #199D67;
 }
 .l6{
     font-size: 3vh;
     padding: 6px 6px 6px 6px;
     border-radius: 50%;
-    padding: 5px 5px 3px 7px;
+    padding: 9px 10px 3px 10px;
     border:2px solid #B752F2;
+}
+.left_right
+{    
+    cursor: pointer;
+    margin-top: 30vh;
+    display: flex;
+    position: absolute;
+    z-index: 900;
+    font-size: 5vh;
+    border-radius: 50%;
+}
+.righta
+{
+    margin-left:53vh;
+}
+.photoimg
+{
+   position:absolute;
+}
+.photoimg a p i{
+ margin-top: 3vh;  
+}
+.photoimg a p
+{ 
+    margin-top: 55vh;
+    margin-left: 7vh;
+    position: absolute;
+    width: 100vh;
+    display: inline;
+}
+.photoimg a img
+{
+    border-radius: 5%;
+    width: 60vh;
+    height: 85vh;
+    position:absolute;
+    object-fit: cover;
+}
+.photoimg a:nth-child(2) img
+{
+    transform: translateX(60vh);
+}
+.photoimg a:nth-child(3) img
+{
+    transform: translateX(120vh);
+}
+.photoimg a:nth-child(4) img
+{
+    transform: translateX(180vh);
+}
+.photoimg a:nth-child(5) img
+{
+    transform: translateX(240vh);
 }
