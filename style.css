@@ -12,6 +12,10 @@ body
 }
 .khung
 {
+    position: fixed;
+    justify-items: left;
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 .left
@@ -368,6 +372,13 @@ body
         height: 80%;
         opacity: 0;
     }
+
+}
+@media screen and (min-width:600px){
+    .center
+    {
+        margin-left: 25%;
+    }
 }
 .center-menu
 {
@@ -385,7 +396,7 @@ body
 }
 .center-menu ul li 
 {   
-    margin-left: 10%;
+    margin-left: 5%;
     justify-content: center;
     display: inline-block;  
     align-items: center;
@@ -525,7 +536,7 @@ body
 }
 .center
 {
-    margin-left: 20%;
+    display: block;
     width: 50vh;
     height: 89vh;
     overflow: hidden;
