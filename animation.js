@@ -87,9 +87,8 @@ const closechatbox1=document.getElementById('center-box1')
 const openchatbox2=document.getElementById('openchatbox_pc2')
 const closechatbox2=document.getElementById('center-box2')
 const logochatbox=document.getElementById('closechatbox-pc')
+const logochatbox1=document.getElementById('closechatbox-pc1')
 const offchatbox=document.getElementById('centerc')
-
-
 openchatbox1.addEventListener("click", function() {
 
       closechatbox1.style.display = "block";
@@ -106,7 +105,7 @@ logochatbox.addEventListener("click", function() {
       closechatbox1.style.display = "none";
       offchatbox.style.display = "block";
   });
-logochatbox.addEventListener("click", function() {
+logochatbox1.addEventListener("click", function() {
       closechatbox2.style.display = "none";
       offchatbox.style.display = "block";
   });
