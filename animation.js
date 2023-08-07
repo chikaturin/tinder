@@ -103,9 +103,11 @@ openchatbox2.addEventListener("click", function() {
   });
 logochatbox.addEventListener("click", function() {
       closechatbox1.style.display = "none";
+      closechatbox2.style.display = "none";
       offchatbox.style.display = "block";
   });
 logochatbox1.addEventListener("click", function() {
       closechatbox2.style.display = "none";
+      closechatbox1.style.display = "none";
       offchatbox.style.display = "block";
   });

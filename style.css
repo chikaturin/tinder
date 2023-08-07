@@ -379,6 +379,9 @@ body
     .center
     {
         margin-left: 25%;
+    }    
+    .centerc{
+        margin-left: 50vh;
     }
 }
 @media screen and (max-width:600px){
@@ -394,6 +397,7 @@ body
     {
         margin-left: 8%;
     }
+
 }
 .center-menu
 {
@@ -619,7 +623,6 @@ body
 }
 .centerc
 {
-    margin-left: 50vh;
     width: 50vh;
     height: 100%;
     display: block;
@@ -709,6 +712,10 @@ body
     background-color: #21262E;
     border-radius: 15px;
     border-bottom-left-radius: 2px;
+}
+#center-box1,#center-box2
+{
+    display: none;
 }
 .chat3
 {
