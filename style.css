@@ -21,7 +21,8 @@ body
 .left
 {   
     font-size: 100%;
-    width: 25%;
+    width: 35%;
+    overflow: hidden;
     height: 100vh;
     background: #121418;
     border-right: 0.3rem solid #3C444F;   
@@ -555,13 +556,220 @@ body
 }
 .center
 {
+    margin-left: 0vh;
     padding-left:0;
     display: block;
-    width: 50vh;
+    width: 100%;
     height: 90vh;
-    overflow: hidden;
 }
 .photoimg
 {
     position: relative;
+}
+#closechat
+{
+    display: none;
+}
+.chatbox_pc
+{
+    overflow: scroll;
+    display: flex;
+    position: relative;
+    margin-left: 3%;
+    padding-top: 8%;
+}
+.chatbox_pc1
+{
+    border-right: 5px solid #FF4458;
+}
+.chatbox_pc p
+{
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1%;
+    position: absolute;
+    padding-left: 23%;
+}
+.namechat
+{
+    display: block;  
+    color: #ffffff;
+    font-size: 3.5vh;
+    display: block;
+}
+.chatwith
+{
+    padding-top: 9%;
+    color:#7C8591;
+    font-size: 2vh;
+}
+.chatbox_pc a img
+{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.chat span:hover
+{
+    border-bottom: 3px solid #FD455A;
+}
+.chatbox_pc:hover
+{
+    border-right: 5px solid #FF4458;
+}
+.centerc
+{
+    margin-left: 50vh;
+    width: 50vh;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+.center-box
+{
+    width: 100%;
+    height: 130%;
+    background-color: #121418;
+    display: none;
+}
+.boxchat-centerabove
+{
+    cursor: pointer;
+    display: flex;
+}
+.boxchat-centerabove i
+{
+    margin-top: 3%;
+    margin-left: 50%;
+    font-size: 40px;
+    cursor: pointer;
+}
+.boxchat-centerabove p
+{
+    font-size: 20px;
+    margin-left: 1%;
+    margin-top: 3.5%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    color: #7C8591;
+}
+.boxchat-centerabove img
+{   
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.center-center
+{
+    position: relative;
+    display: inline-block;
+    border: 2px solid #3C444F;
+    width: 100%;
+    height: 65%;
+    border-left:none;
+}
+.chat1,.chat5
+{
+    color: white;
+    margin-left: 92%;
+    margin-right: 3%;
+    margin-top: 3%;
+    padding: 7px 7px 7px 7px;
+    font-size: 20px;
+    width: fit-content;
+    background-color: #1761B8;
+    border-radius: 15px;
+    border-bottom-right-radius: 2px;
+}
+.chat4
+{
+    margin-left: 84.5%;
+    color: white;
+    margin-top: 3%;
+    padding: 7px 7px 7px 7px;
+    font-size: 20px;
+    width: fit-content;
+    background-color: #1761B8;
+    border-radius: 15px;
+    border-bottom-right-radius: 2px;
+}
+.chat2,.chat3
+{
+    padding-bottom: 5px;
+    color: white;
+    margin-left: 7%;
+    padding: 7px 7px 7px 7px;
+    font-size: 20px;
+    width: fit-content;
+    background-color: #21262E;
+    border-radius: 15px;
+    border-bottom-left-radius: 2px;
+}
+.chat3
+{
+    margin-top: 12px;
+}
+.center-center img:nth-child(4)
+{
+    margin-top: 1.3%;
+}
+.center-center img
+{
+    margin-left: 3%;
+    position:absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.center-center img:nth-child(7)
+{
+    margin-top: 1.5%;
+    position: relative;
+}
+.center-center video
+{
+    margin-top: 2%;
+    position: absolute;
+    margin-left: 3%;
+    width: 50vh;
+    height: 40vh;
+}
+.center-below
+{
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 100%;
+    display: flex;
+}
+.center-below i
+{
+    padding-right: 2%;
+    font-size: 30px;
+}
+.center-below input
+{
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    outline: none;
+    color: white;
+    padding-left: 1%;
+}
+.center-below i:nth-child(6)
+{
+    padding-left: 50%;
+}
+.center-below p
+{
+    margin-top: 0px;
+    cursor: pointer;
+    color: #656E7B;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background: #21262E;
 }
