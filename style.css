@@ -592,7 +592,7 @@ body
     cursor: pointer;
     margin-top: 1%;
     position: absolute;
-    padding-left: 23%;
+    margin-left: 80px;
 }
 .namechat
 {
@@ -603,7 +603,7 @@ body
 }
 .chatwith
 {
-    padding-top: 9%;
+    padding-top: 30px;
     color:#7C8591;
     font-size: 2vh;
 }
@@ -674,7 +674,7 @@ body
     position: relative;
     display: inline-block;
     border: 2px solid #3C444F;
-    width: 100%;
+    width: 99.9%;
     height: 65%;
     border-left:none;
 }
