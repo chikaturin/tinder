@@ -11,6 +11,9 @@ openmenu.addEventListener("click", function() {
       closechatbox1.style.display="none";
       closechatbox2.style.display="none";
       offchatbox.style.display="block";
+      closetroll1.style.display = "none";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
     } else {
       closemenu.style.display = "none";
       offmenu.style.display = "block";
@@ -19,6 +22,9 @@ openmenu.addEventListener("click", function() {
       closechatbox1.style.display="none";
       closechatbox2.style.display="none";
       offchatbox.style.display="block";
+      closetroll1.style.display = "none";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
     }
   });
 //   find
@@ -33,6 +39,9 @@ openfind.addEventListener("click", function() {
       closechatbox1.style.display="none";
       closechatbox2.style.display="none";
       offchatbox.style.display="block";
+      closetroll1.style.display = "none";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
     } else {
       closefind.style.display ="none";
       offmenu.style.display = "block";
@@ -42,6 +51,9 @@ openfind.addEventListener("click", function() {
       closechatbox1.style.display="none";
       closechatbox2.style.display="none";
       offchatbox.style.display="block";
+      closetroll1.style.display = "none";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
     }
   });
 //   chat
