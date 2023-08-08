@@ -3,30 +3,45 @@ const closemenu=document.getElementById('close')
 const offmenu=document.getElementById('left-belowc')
 const offstatus=document.getElementById('chat')
 openmenu.addEventListener("click", function() {
-    if (closemenu.style.display === "none" && offmenu.style.display === "block") {
+    if (closemenu.style.display === "none") {
       closemenu.style.display = "block";
       offmenu.style.display = "none";
-      offstatus.style.display = "none";
-      closechatbox.style.display = "none";
+      closefind.style.display="none";
+      offstatus.style.display="none";
+      closechatbox1.style.display="none";
+      closechatbox2.style.display="none";
+      offchatbox.style.display="block";
     } else {
-        offstatus.style.display = "flex";
       closemenu.style.display = "none";
       offmenu.style.display = "block";
+      closechat.style.display="none";
+      offstatus.style.display="flex";
+      closechatbox1.style.display="none";
+      closechatbox2.style.display="none";
+      offchatbox.style.display="block";
     }
   });
 //   find
 const openfind=document.getElementById('open-find')
 const closefind=document.getElementById('close-find')
 openfind.addEventListener("click", function() {
-    if (closefind.style.display === "none" && offmenu.style.display === "block") {
+    if (closefind.style.display === "none") {
       closefind.style.display = "block";
       offmenu.style.display = "none";
       offstatus.style.display = "none";
-      closechatbox.style.display = "none";
+      closemenu.style.display="none";
+      closechatbox1.style.display="none";
+      closechatbox2.style.display="none";
+      offchatbox.style.display="block";
     } else {
-        offstatus.style.display = "flex";
-      closefind.style.display = "none";
+      closefind.style.display ="none";
       offmenu.style.display = "block";
+      closechat.style.display="none";
+      closemenu.style.display="none";
+      offstatus.style.display="flex";
+      closechatbox1.style.display="none";
+      closechatbox2.style.display="none";
+      offchatbox.style.display="block";
     }
   });
 //   chat
@@ -47,8 +62,9 @@ openfind.addEventListener("click", function() {
       if (offmenu.style.display === "none" && closechat.style.display === "block") {
           closechat.style.display = "none";
           offmenu.style.display = "block";
-          closechatbox.style.display="none"
-          offchatbox.style.display="block"
+          closechatbox1.style.display="none";
+          closechatbox2.style.display='none';
+          offchatbox.style.display="block";
         }
       });
 // next slide
@@ -89,25 +105,93 @@ const closechatbox2=document.getElementById('center-box2')
 const logochatbox=document.getElementById('closechatbox-pc')
 const logochatbox1=document.getElementById('closechatbox-pc1')
 const offchatbox=document.getElementById('centerc')
+
+const opentroll=document.getElementById('openchatbox_pc3')
+const closetroll=document.getElementById('troll')
+const offtroll=document.getElementById('closetroll')
+
+const opentroll1=document.getElementById('openchatbox_pc4')
+const closetroll1=document.getElementById('troll2')
+const offtroll1=document.getElementById('closetroll2')
+
+const opentroll2=document.getElementById('openchatbox_pc5')
+const closetroll2=document.getElementById('troll3')
+const offtroll2=document.getElementById('closetroll3')
+
+opentroll.addEventListener("click", function() {
+
+      closetroll.style.display = "block";
+      closetroll1.style.display="none";
+      closetroll2.style.display="none";
+      offchatbox.style.display = "none";
+  });
+  offtroll.addEventListener("click", function() {
+    closetroll.style.display="none";
+    offchatbox.style.display = "block";
+    closechatbox1.style.display="none";
+    closechatbox2.style.display="none";
+});
+
+opentroll1.addEventListener("click", function() {
+
+      closetroll1.style.display = "block";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
+      offchatbox.style.display = "none";
+  });
+  offtroll1.addEventListener("click", function() {
+    closetroll1.style.display="none";
+    offchatbox.style.display = "block";
+    closechatbox1.style.display="none";
+    closechatbox2.style.display="none";
+});
+
+opentroll2.addEventListener("click", function() {
+
+      closetroll2.style.display = "block";
+      closetroll1.style.display="none"
+      offchatbox.style.display = "none";
+  });
+  offtroll2.addEventListener("click", function() {
+    closetroll2.style.display="none";
+    offchatbox.style.display = "block";
+    closechatbox1.style.display="none";
+    closechatbox2.style.display="none";
+});
+
 openchatbox1.addEventListener("click", function() {
 
       closechatbox1.style.display = "block";
+      closetroll1.style.display = "none";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
+      closefind.style.display = "none";
       closemenu.style.display = "none";
       offchatbox.style.display = "none";
   });
+
 openchatbox2.addEventListener("click", function() {    
     if(closechatbox1.style.display==="block"){ closechatbox1.style.display="none"}
       closechatbox2.style.display = "block";
+      closefind.style.display = "none";
+      closetroll.style.display="none";
       closemenu.style.display = "none";
+      closetroll1.style.display = "none";
+      closetroll2.style.display = "none";
+      closetroll.style.display = "none";
       offchatbox.style.display = "none";
   });
+
 logochatbox.addEventListener("click", function() {
       closechatbox1.style.display = "none";
+      closefind.style.display = "none";
       closechatbox2.style.display = "none";
       offchatbox.style.display = "block";
   });
+
 logochatbox1.addEventListener("click", function() {
       closechatbox2.style.display = "none";
+      closefind.style.display = "none";
       closechatbox1.style.display = "none";
       offchatbox.style.display = "block";
   });
