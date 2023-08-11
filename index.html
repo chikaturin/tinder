@@ -23,9 +23,11 @@
                 </div>
                 <!-- left-below -->
                 <div class="left-below" >
-                    <div >
                         <img id="close" src="./img/Screenshot 2023-08-01 at 14.38.21.png">                            
-                        <a class="chat" id="chat"><span id="openbox">Các Tương Hợp</span> <span id="openchat">Tin Nhắn</span></a>
+                        <a class="chat" id="chat">
+                            <span class="card" onclick="toggleHighlight(this)" id="openbox" >Các Tương Hợp</span>
+                            <span class="card" onclick="toggleHighlight(this)" id="openchat">Tin Nhắn</span>
+                        </a>
                         <div id="left-belowc">
                             <div class="avt avt1">
                                 <p>D.Linh</p>
@@ -43,7 +45,6 @@
                                 <p>Liên</p>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="menufind" id="close-find">
                     <div class="menu-find menu1">
@@ -78,35 +79,35 @@
                     </div>
                 </div>
                 <div id="closechat" class="chatbox-x">
-                    <div class="chatbox_pc chatbox_pc1" id="openchatbox_pc1" >
+                    <div class="chatbox_pc" onclick="toggleHighlightright(this)" id="openchatbox_pc1" >
                         <a>
                             <img src="./img/huy 2.jpg">
                         </a> 
                             <p class="namechat">Huy</p>
                             <p class="chatwith">Hello</p>
                     </div>
-                    <div class="chatbox_pc" id="openchatbox_pc2">
+                    <div class="chatbox_pc" onclick="toggleHighlightright(this)" id="openchatbox_pc2">
                         <a>
                             <img src="./img/lien 2.jpg">
                         </a> 
                             <p class="namechat">Liên</p>
                             <p class="chatwith">Êy có dramma nè</p>
                     </div>
-                    <div class="chatbox_pc" id="openchatbox_pc3">
+                    <div class="chatbox_pc" onclick="toggleHighlightright(this)" id="openchatbox_pc3">
                         <a>
                             <img src="./img/linh 2.jpg">
                         </a> 
                             <p class="namechat">Linh</p>
                             <p class="chatwith">Chào bạn</p>
                     </div>
-                    <div class="chatbox_pc" id="openchatbox_pc4">
+                    <div class="chatbox_pc" onclick="toggleHighlightright(this)" id="openchatbox_pc4">
                         <a>
                             <img src="./img/tien.jpg">
                         </a> 
                             <p class="namechat">Tiến</p>
                             <p class="chatwith">Uầy hot boy</p>
                     </div>
-                    <div class="chatbox_pc" id="openchatbox_pc5">
+                    <div class="chatbox_pc" onclick="toggleHighlightright(this)" id="openchatbox_pc5">
                             <a>
                                 <img src="./img/quynh 2.jpg">
                             </a> 

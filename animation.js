@@ -63,6 +63,8 @@ openfind.addEventListener("click", function() {
     if (closechat.style.display === "none" && offmenu.style.display === "block") {
         closechat.style.display = "block";
         offmenu.style.display = "none";
+        openbox.style.borderBottomColor="#121418"
+        openchat.style.borderBottomColor="#FF4458"
       } else {
         closechat.style.display = "none";
         offmenu.style.display = "block";
@@ -77,6 +79,8 @@ openfind.addEventListener("click", function() {
           closechatbox1.style.display="none";
           closechatbox2.style.display='none';
           offchatbox.style.display="block";
+          openbox.style.borderBottomColor="#FF4458"
+          openchat.style.borderBottomColor="#121418"
         }
       });
 // next slide
@@ -207,3 +211,33 @@ logochatbox1.addEventListener("click", function() {
       closechatbox1.style.display = "none";
       offchatbox.style.display = "block";
   });
+// click bottom 
+let previousHighlightedCard = null;
+
+function toggleHighlight(element) {
+  if (previousHighlightedCard !== null) {
+    previousHighlightedCard.classList.remove("highlight");
+  }
+
+  if (element !== previousHighlightedCard) {
+    element.classList.add("highlight");
+    previousHighlightedCard = element;
+  } else {
+    previousHighlightedCard = null;
+  }
+}
+// click right 
+let previousHighlightedCardright = null;
+
+function toggleHighlightright(element) {
+  if (previousHighlightedCardright !== null) {
+    previousHighlightedCardright.classList.remove("highlightright");
+  }
+
+  if (element !== previousHighlightedCardright) {
+    element.classList.add("highlightright");
+    previousHighlightedCardright = element;
+  } else {
+    previousHighlightedCardright = null;
+  }
+}

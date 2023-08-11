@@ -40,10 +40,12 @@ body
     .center{
         display: block;
     }  
+    .centerc{
+        margin-left: 3%;
+    }
     .left_right{
         opacity: 1;
-    }
-    
+    }   
 }
 .left-above
 {
@@ -65,6 +67,31 @@ body
     font-weight: bold;    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.chat
+{
+    margin-left: 10%;
+}
+#openbox
+{
+    border-bottom-color: #FF4458;
+}
+.card {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;    
+    padding: 0 30px;
+    cursor: pointer;
+  }
+  .highlight {
+    border-bottom-color: #FF4458;
+}  
+  .card:hover
+  {
+    border-bottom-color: #FF4458;
+  }
 #left-belowc
 {
     display: block;
@@ -145,16 +172,7 @@ body
     color: white;
     display: flex;
     margin-right: 40%;
-    cursor: pointer;
-}
-.chat span
-{
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 10%;
-    display: flex;
-    font-size: 1rem;
-    cursor:pointer;
+    border: none;
 }
 .avt
 {
@@ -373,7 +391,6 @@ body
         height: 80%;
         opacity: 0;
     }
-
 }
 @media screen and (min-width:600px){
     .center
@@ -576,16 +593,17 @@ body
 }
 .chatbox_pc
 {
+    border-right: 5px solid transparent;
+    transition: border-color 0.3s; 
     overflow: scroll;
     display: flex;
     position: relative;
     margin-left: 3%;
     padding-top: 8%;
 }
-.chatbox_pc1
-{
-    border-right: 5px solid #FF4458;
-}
+.highlightright {
+    border-right-color: #FF4458;
+}  
 .chatbox_pc p
 {
     width: 100%;
@@ -612,10 +630,6 @@ body
     border-radius: 50%;
     width: 70px;
     height: 70px;
-}
-.chat span:hover
-{
-    border-bottom: 3px solid #FD455A;
 }
 .chatbox_pc:hover
 {
