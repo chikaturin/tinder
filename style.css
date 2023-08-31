@@ -595,7 +595,7 @@ body
 {
     border-right: 5px solid transparent;
     transition: border-color 0.3s; 
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     position: relative;
     margin-left: 3%;
